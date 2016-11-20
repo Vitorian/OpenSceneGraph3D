@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\b6eb82fdef5c443c59ef4943c1e2c151\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D135FD11-502B-43A9-8C0F-AE6AD347F66B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

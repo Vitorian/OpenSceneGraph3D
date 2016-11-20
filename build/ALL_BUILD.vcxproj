@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{7A7787B0-AD96-4633-BF25-9430244B2967}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Packages\OpenSceneGraph-3.4\include;D:\Packages\OpenSceneGraph-3.4\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Packages\OpenSceneGraph-3.4\include;D:\Packages\OpenSceneGraph-3.4\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Packages\OpenSceneGraph-3.4\include;D:\Packages\OpenSceneGraph-3.4\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Packages\OpenSceneGraph-3.4\include;D:\Packages\OpenSceneGraph-3.4\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Packages\OpenSceneGraph-3.4\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Packages/OpenSceneGraph-3.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -HD:/Packages/OpenSceneGraph-3.4 -BD:/Packages/OpenSceneGraph-3.4/build --check-stamp-file D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Packages/OpenSceneGraph-3.4/CMakeLists.txt;D:\Packages\OpenSceneGraph-3.4\CMakeLists.txt;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeSystem.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeCCompiler.cmake;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeCXXCompiler.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeRCCompiler.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.3\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.3\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.3\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\src\osg\Config.in;D:\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;D:\Packages\OpenSceneGraph-3.4\src\osg\GL.in;D:\Packages\OpenSceneGraph-3.4\src\osg\Version.in;D:\Packages\OpenSceneGraph-3.4\PlatformSpecifics\Windows\OpenSceneGraphVersionInfo.rc.in;D:\Packages\OpenSceneGraph-3.4\CMakeModules\Find3rdPartyDependencies.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindNVTT.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindFreetype.cmake;D:\CMake\share\cmake-3.3\Modules\FindFreetype.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindInventor.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindJasper.cmake;D:\CMake\share\cmake-3.3\Modules\FindJasper.cmake;D:\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\SelectLibraryConfigurations.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindOpenEXR.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindCOLLADA.cmake;D:\CMake\share\cmake-3.3\Modules\FindLibXml2.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindFBX.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindXine.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindOpenVRML.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindPerformer.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGDAL.cmake;D:\CMake\share\cmake-3.3\Modules\FindGDAL.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGTA.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindCURL.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindLibVNCServer.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindOurDCMTK.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindFFmpeg.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGStreamer.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGLIB.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindDirectShow.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindSDL2.cmake;D:\CMake\share\cmake-3.3\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.3\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.3\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindSDL.cmake;D:\CMake\share\cmake-3.3\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.3\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.3\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindPoppler-glib.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindRSVG.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGtkGl.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindDirectInput.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindNVTT.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindZeroConf.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindLIBLAS.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\OsgMacroUtils.cmake;D:\CMake\share\cmake-3.3\Modules\FindQt4.cmake;D:\CMake\share\cmake-3.3\Modules\CheckCXXSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\MacroAddFileDependencies.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\CMakePushCheckState.cmake;D:\CMake\share\cmake-3.3\Modules\FindQt3.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGIFLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPNG.cmake;D:\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindTIFF.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindQuickTime.cmake;D:\CMake\share\cmake-3.3\Modules\Documentation.cmake;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osg.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgDB.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgFX.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgGA.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgParticle.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgSim.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgText.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgUtil.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgTerrain.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgManipulator.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgViewer.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgWidget.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgShadow.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgAnimation.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgVolume.pc.in;D:\Packages\OpenSceneGraph-3.4\CMakeModules\cmake_uninstall.cmake.in;D:\Packages\OpenSceneGraph-3.4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Packages/OpenSceneGraph-3.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -HD:/Packages/OpenSceneGraph-3.4 -BD:/Packages/OpenSceneGraph-3.4/build --check-stamp-file D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Packages/OpenSceneGraph-3.4/CMakeLists.txt;D:\Packages\OpenSceneGraph-3.4\CMakeLists.txt;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeSystem.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeCCompiler.cmake;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeCXXCompiler.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeRCCompiler.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.3\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.3\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.3\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\src\osg\Config.in;D:\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;D:\Packages\OpenSceneGraph-3.4\src\osg\GL.in;D:\Packages\OpenSceneGraph-3.4\src\osg\Version.in;D:\Packages\OpenSceneGraph-3.4\PlatformSpecifics\Windows\OpenSceneGraphVersionInfo.rc.in;D:\Packages\OpenSceneGraph-3.4\CMakeModules\Find3rdPartyDependencies.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindNVTT.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindFreetype.cmake;D:\CMake\share\cmake-3.3\Modules\FindFreetype.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindInventor.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindJasper.cmake;D:\CMake\share\cmake-3.3\Modules\FindJasper.cmake;D:\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\SelectLibraryConfigurations.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindOpenEXR.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindCOLLADA.cmake;D:\CMake\share\cmake-3.3\Modules\FindLibXml2.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindFBX.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindXine.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindOpenVRML.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindPerformer.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGDAL.cmake;D:\CMake\share\cmake-3.3\Modules\FindGDAL.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGTA.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindCURL.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindLibVNCServer.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindOurDCMTK.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindFFmpeg.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGStreamer.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGLIB.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindDirectShow.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindSDL2.cmake;D:\CMake\share\cmake-3.3\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.3\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.3\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindSDL.cmake;D:\CMake\share\cmake-3.3\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.3\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.3\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindPoppler-glib.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindRSVG.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGtkGl.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindDirectInput.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindNVTT.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindZeroConf.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindLIBLAS.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\OsgMacroUtils.cmake;D:\CMake\share\cmake-3.3\Modules\FindQt4.cmake;D:\CMake\share\cmake-3.3\Modules\CheckCXXSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\MacroAddFileDependencies.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\CMakePushCheckState.cmake;D:\CMake\share\cmake-3.3\Modules\FindQt3.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGIFLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPNG.cmake;D:\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindTIFF.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindQuickTime.cmake;D:\CMake\share\cmake-3.3\Modules\Documentation.cmake;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osg.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgDB.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgFX.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgGA.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgParticle.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgSim.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgText.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgUtil.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgTerrain.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgManipulator.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgViewer.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgWidget.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgShadow.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgAnimation.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgVolume.pc.in;D:\Packages\OpenSceneGraph-3.4\CMakeModules\cmake_uninstall.cmake.in;D:\Packages\OpenSceneGraph-3.4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Packages/OpenSceneGraph-3.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -HD:/Packages/OpenSceneGraph-3.4 -BD:/Packages/OpenSceneGraph-3.4/build --check-stamp-file D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Packages/OpenSceneGraph-3.4/CMakeLists.txt;D:\Packages\OpenSceneGraph-3.4\CMakeLists.txt;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeSystem.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeCCompiler.cmake;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeCXXCompiler.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeRCCompiler.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.3\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.3\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.3\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\src\osg\Config.in;D:\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;D:\Packages\OpenSceneGraph-3.4\src\osg\GL.in;D:\Packages\OpenSceneGraph-3.4\src\osg\Version.in;D:\Packages\OpenSceneGraph-3.4\PlatformSpecifics\Windows\OpenSceneGraphVersionInfo.rc.in;D:\Packages\OpenSceneGraph-3.4\CMakeModules\Find3rdPartyDependencies.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindNVTT.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindFreetype.cmake;D:\CMake\share\cmake-3.3\Modules\FindFreetype.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindInventor.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindJasper.cmake;D:\CMake\share\cmake-3.3\Modules\FindJasper.cmake;D:\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\SelectLibraryConfigurations.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindOpenEXR.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindCOLLADA.cmake;D:\CMake\share\cmake-3.3\Modules\FindLibXml2.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindFBX.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindXine.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindOpenVRML.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindPerformer.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGDAL.cmake;D:\CMake\share\cmake-3.3\Modules\FindGDAL.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGTA.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindCURL.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindLibVNCServer.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindOurDCMTK.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindFFmpeg.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGStreamer.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGLIB.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindDirectShow.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindSDL2.cmake;D:\CMake\share\cmake-3.3\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.3\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.3\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindSDL.cmake;D:\CMake\share\cmake-3.3\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.3\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.3\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindPoppler-glib.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindRSVG.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGtkGl.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindDirectInput.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindNVTT.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindZeroConf.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindLIBLAS.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\OsgMacroUtils.cmake;D:\CMake\share\cmake-3.3\Modules\FindQt4.cmake;D:\CMake\share\cmake-3.3\Modules\CheckCXXSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\MacroAddFileDependencies.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\CMakePushCheckState.cmake;D:\CMake\share\cmake-3.3\Modules\FindQt3.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGIFLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPNG.cmake;D:\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindTIFF.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindQuickTime.cmake;D:\CMake\share\cmake-3.3\Modules\Documentation.cmake;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osg.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgDB.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgFX.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgGA.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgParticle.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgSim.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgText.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgUtil.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgTerrain.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgManipulator.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgViewer.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgWidget.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgShadow.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgAnimation.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgVolume.pc.in;D:\Packages\OpenSceneGraph-3.4\CMakeModules\cmake_uninstall.cmake.in;D:\Packages\OpenSceneGraph-3.4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Packages/OpenSceneGraph-3.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -HD:/Packages/OpenSceneGraph-3.4 -BD:/Packages/OpenSceneGraph-3.4/build --check-stamp-file D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Packages/OpenSceneGraph-3.4/CMakeLists.txt;D:\Packages\OpenSceneGraph-3.4\CMakeLists.txt;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeSystem.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeCCompiler.cmake;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeCXXCompiler.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\3.3.1\CMakeRCCompiler.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.3\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.3\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.3\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\src\osg\Config.in;D:\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;D:\Packages\OpenSceneGraph-3.4\src\osg\GL.in;D:\Packages\OpenSceneGraph-3.4\src\osg\Version.in;D:\Packages\OpenSceneGraph-3.4\PlatformSpecifics\Windows\OpenSceneGraphVersionInfo.rc.in;D:\Packages\OpenSceneGraph-3.4\CMakeModules\Find3rdPartyDependencies.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindNVTT.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindFreetype.cmake;D:\CMake\share\cmake-3.3\Modules\FindFreetype.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindInventor.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindJasper.cmake;D:\CMake\share\cmake-3.3\Modules\FindJasper.cmake;D:\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\SelectLibraryConfigurations.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindOpenEXR.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindCOLLADA.cmake;D:\CMake\share\cmake-3.3\Modules\FindLibXml2.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindFBX.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindXine.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindOpenVRML.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindPerformer.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGDAL.cmake;D:\CMake\share\cmake-3.3\Modules\FindGDAL.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGTA.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindCURL.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindLibVNCServer.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindOurDCMTK.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindFFmpeg.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGStreamer.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGLIB.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindDirectShow.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindSDL2.cmake;D:\CMake\share\cmake-3.3\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.3\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.3\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindSDL.cmake;D:\CMake\share\cmake-3.3\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.3\Modules\CheckIncludeFiles.cmake;D:\CMake\share\cmake-3.3\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindPoppler-glib.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindRSVG.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGtkGl.cmake;D:\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindDirectInput.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindNVTT.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindZeroConf.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindLIBLAS.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\OsgMacroUtils.cmake;D:\CMake\share\cmake-3.3\Modules\FindQt4.cmake;D:\CMake\share\cmake-3.3\Modules\CheckCXXSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\CheckSymbolExists.cmake;D:\CMake\share\cmake-3.3\Modules\MacroAddFileDependencies.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\CMakePushCheckState.cmake;D:\CMake\share\cmake-3.3\Modules\FindQt3.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindGIFLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPNG.cmake;D:\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\CMake\share\cmake-3.3\Modules\FindTIFF.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\Packages\OpenSceneGraph-3.4\CMakeModules\FindQuickTime.cmake;D:\CMake\share\cmake-3.3\Modules\Documentation.cmake;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osg.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgDB.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgFX.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgGA.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgParticle.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgSim.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgText.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgUtil.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgTerrain.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgManipulator.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgViewer.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgWidget.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgShadow.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgAnimation.pc.in;D:\Packages\OpenSceneGraph-3.4\packaging\pkgconfig\openscenegraph-osgVolume.pc.in;D:\Packages\OpenSceneGraph-3.4\CMakeModules\cmake_uninstall.cmake.in;D:\Packages\OpenSceneGraph-3.4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Packages\OpenSceneGraph-3.4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/OpenThreads/win32/OpenThreads.vcxproj">
+      <Project>BD244CE3-69D8-4712-8D3C-B981CECE05E5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/ZERO_CHECK.vcxproj">
+      <Project>CA5ECD61-B2E4-45B0-BAD3-CB69C1B34AE3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/applications/osgarchive/application_osgarchive.vcxproj">
+      <Project>DAA39D06-5DC2-4D29-BFD1-1B50E475534E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/applications/osgconv/application_osgconv.vcxproj">
+      <Project>397F225C-CB86-44E3-8F3B-6949FA11251E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/applications/osgfilecache/application_osgfilecache.vcxproj">
+      <Project>4EEE0CE5-2C60-4537-A69D-E5D533089C43</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/applications/osgversion/application_osgversion.vcxproj">
+      <Project>A52A18C9-2206-4ABC-980D-CE1B8CE99DEE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/applications/osgviewer/application_osgviewer.vcxproj">
+      <Project>6D05631D-64BD-42F1-BBC3-1E1F91CA5B98</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/applications/present3D/application_present3D.vcxproj">
+      <Project>17EE8253-3BC2-4562-A842-C34D5024D33E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osg/osg.vcxproj">
+      <Project>82BFF1D3-7536-448E-A9E4-87DAF89978AE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgAnimation/osgAnimation.vcxproj">
+      <Project>729F033F-DA76-4C81-8F32-2F0736C9B582</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgDB/osgDB.vcxproj">
+      <Project>B71B6401-08E9-45C3-999C-B5BB3C91552A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgFX/osgFX.vcxproj">
+      <Project>98BCCF51-5617-4B1B-8C9D-7EB9983FD7BB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgGA/osgGA.vcxproj">
+      <Project>4DD198E0-8530-43B8-B40B-8253A760B97D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgManipulator/osgManipulator.vcxproj">
+      <Project>1E30BE8C-A6A7-475C-B3B2-7B5D9A0B28F6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgParticle/osgParticle.vcxproj">
+      <Project>87866876-A89D-4072-801D-949D179543FC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPresentation/osgPresentation.vcxproj">
+      <Project>DAB9D2CC-CA73-4ED8-BC5A-A57DE863F7CF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgShadow/osgShadow.vcxproj">
+      <Project>3AFAB486-FC2B-48B3-AF41-28A57EB5A80C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgSim/osgSim.vcxproj">
+      <Project>7879E54C-1CD1-4416-8B58-F89D56E2C9BD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgTerrain/osgTerrain.vcxproj">
+      <Project>5810938B-E013-4624-A430-AEC26A54FB5E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgText/osgText.vcxproj">
+      <Project>858527A8-A44D-4553-94D3-B20D6D068834</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgUI/osgUI.vcxproj">
+      <Project>40DF03C6-5DBD-4589-94FE-4039FFBABDC0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgUtil/osgUtil.vcxproj">
+      <Project>1ABDBB3F-1C3C-425A-8B20-4CA8E7AA2F85</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgViewer/osgViewer.vcxproj">
+      <Project>A1A3CB80-ED28-409D-822A-5D630B4A7ED1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgVolume/osgVolume.vcxproj">
+      <Project>BF917830-E441-414F-8C4F-9E1F55689E06</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWidget/osgWidget.vcxproj">
+      <Project>854460AB-D0D6-444D-B260-6082CAD35D78</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/3dc/osgdb_3dc.vcxproj">
+      <Project>3FFA946E-BE8C-403F-B002-6300216BE56A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/3ds/osgdb_3ds.vcxproj">
+      <Project>04098FA3-D29B-4418-A234-FA52300B66E1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/ac/osgdb_ac.vcxproj">
+      <Project>42E16669-0DC2-49AE-978F-23A8BCDD5B44</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/bmp/osgdb_bmp.vcxproj">
+      <Project>155981C2-8E11-4F00-AC79-490A0D0FE233</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/bsp/osgdb_bsp.vcxproj">
+      <Project>004244BA-0666-409C-BE0D-23C4A91F55F0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/bvh/osgdb_bvh.vcxproj">
+      <Project>4A379E63-BD83-49FA-BAEE-36AC531A899A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/cfg/osgdb_cfg.vcxproj">
+      <Project>41D5CDBB-88CC-460E-ADDE-B2B3D12414A5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/curl/osgdb_curl.vcxproj">
+      <Project>8724A880-911C-43DF-BC51-405273E324F2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/dds/osgdb_dds.vcxproj">
+      <Project>B0C1C522-5058-4603-9288-543EF79C3A94</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/deprecated-dotosg/osg/osgdb_deprecated_osg.vcxproj">
+      <Project>39C75A59-F042-43B5-BB09-B8D16ED0D330</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/deprecated-dotosg/osgAnimation/osgdb_deprecated_osganimation.vcxproj">
+      <Project>1370190A-64B2-4DE4-A98C-E0A453F704F4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/deprecated-dotosg/osgFX/osgdb_deprecated_osgfx.vcxproj">
+      <Project>18C891CF-0376-4FA6-A0F8-9737AB9C8FC2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/deprecated-dotosg/osgParticle/osgdb_deprecated_osgparticle.vcxproj">
+      <Project>40E601B5-F0B5-47C5-890D-420DB4919E14</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/deprecated-dotosg/osgShadow/osgdb_deprecated_osgshadow.vcxproj">
+      <Project>A3A6AFB0-ADDA-4CFA-B666-0F46AAA4C12B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/deprecated-dotosg/osgSim/osgdb_deprecated_osgsim.vcxproj">
+      <Project>D899A464-81ED-4DA3-96F9-9FC5E5141AB0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/deprecated-dotosg/osgTerrain/osgdb_deprecated_osgterrain.vcxproj">
+      <Project>15E722C4-0E61-4169-B17E-32D738CE8B05</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/deprecated-dotosg/osgText/osgdb_deprecated_osgtext.vcxproj">
+      <Project>6B23BD5C-7128-4FB7-BC8F-D656128DD208</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/deprecated-dotosg/osgViewer/osgdb_deprecated_osgviewer.vcxproj">
+      <Project>4B98B049-07A8-48D5-8854-D0F031255CD2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/deprecated-dotosg/osgVolume/osgdb_deprecated_osgvolume.vcxproj">
+      <Project>A4DED3F8-671E-4A40-ADA2-08DE214CC8BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/deprecated-dotosg/osgWidget/osgdb_deprecated_osgwidget.vcxproj">
+      <Project>1BF39BA6-3A2D-4E0C-9DCE-191DDC2A2A94</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/dot/osgdb_dot.vcxproj">
+      <Project>1734FC48-1044-4FE8-87BA-739552AB35C6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/dw/osgdb_dw.vcxproj">
+      <Project>06AD500F-F537-4B64-82AD-2AEF526C3083</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/dxf/osgdb_dxf.vcxproj">
+      <Project>DA9EF622-6240-433F-96C6-3AF14CDFAADA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/freetype/osgdb_freetype.vcxproj">
+      <Project>8E5AD4DF-4C61-43A3-B264-2143FBE41090</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/gif/osgdb_gif.vcxproj">
+      <Project>DDB87233-9099-4D8E-9FB1-320D19799E63</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/gles/osgdb_gles.vcxproj">
+      <Project>CF4BD3C2-CE04-434C-B3F6-0B0521AAC846</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/glsl/osgdb_glsl.vcxproj">
+      <Project>F10AC268-E157-42A4-9322-10326D267E27</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/gz/osgdb_gz.vcxproj">
+      <Project>4353A0ED-37DA-4F09-9DC9-F85AB2EF029D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/hdr/osgdb_hdr.vcxproj">
+      <Project>297652A1-B2FA-4F2B-BAAD-0864024C75CA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/ive/osgdb_ive.vcxproj">
+      <Project>F244B563-23F0-439D-9A8B-26D47B7A88EC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/jpeg/osgdb_jpeg.vcxproj">
+      <Project>1E0A4F3C-995E-4035-8AB8-09BFD4DF395F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/ktx/osgdb_ktx.vcxproj">
+      <Project>5E9FC4D1-10F8-4748-BA08-C8105384CA83</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/logo/osgdb_logo.vcxproj">
+      <Project>34666D9A-9681-4501-A7F3-A1826BBA5CDF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/lua/osgdb_lua.vcxproj">
+      <Project>A7ADAE7C-D00A-40E3-A91C-0AB249C85AE0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/lwo/osgdb_lwo.vcxproj">
+      <Project>DF20EC7A-CD14-4DEB-8E0C-5CFCC7436F2F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/lws/osgdb_lws.vcxproj">
+      <Project>3BCD3EB8-B49E-46B9-8C61-3EB7ADCD007A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/md2/osgdb_md2.vcxproj">
+      <Project>CE435C90-71E4-4749-8975-11EB605726E4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/mdl/osgdb_mdl.vcxproj">
+      <Project>68911712-5D76-46C2-87ED-B9AE692F8B23</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/normals/osgdb_normals.vcxproj">
+      <Project>E851B073-CA3E-4F16-B668-688FC61B9DEA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/obj/osgdb_obj.vcxproj">
+      <Project>CCEF7483-5A33-4CB9-BDFF-145F07902CAE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/OpenFlight/osgdb_openflight.vcxproj">
+      <Project>3C5D7CDF-F6B1-43CD-837F-E68CBF7AFFFE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/osc/osgdb_osc.vcxproj">
+      <Project>CABFCBFC-EA5B-44AB-B4CB-5978AC5AE8E2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/osg/osgdb_osg.vcxproj">
+      <Project>866FB1C3-2ABE-44BE-AE32-61D606BC6FFC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/osga/osgdb_osga.vcxproj">
+      <Project>D5196DB0-1F7F-4490-B019-F0B5EDA8F38F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/osgjs/osgdb_osgjs.vcxproj">
+      <Project>B7373CA2-4055-46F5-8E26-D52BB03135F1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/shadow/osgdb_osgshadow.vcxproj">
+      <Project>EB289C90-9C77-4E9B-883E-4349455E2247</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/terrain/osgdb_osgterrain.vcxproj">
+      <Project>45CABD52-50EE-4B5A-8E75-26CFC67110A0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/osgtgz/osgdb_osgtgz.vcxproj">
+      <Project>EED877FB-B983-4466-ABBB-398B5BACA148</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/view/osgdb_osgviewer.vcxproj">
+      <Project>2F554464-22C7-4D29-8D3E-070716F837E8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/p3d/osgdb_p3d.vcxproj">
+      <Project>55A371CF-37D6-400C-ABAA-C5602A743803</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/pic/osgdb_pic.vcxproj">
+      <Project>5EE20C40-3622-4FBB-82A4-B69354EE1867</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/ply/osgdb_ply.vcxproj">
+      <Project>B9FB0274-EA2B-4F65-B074-B0124EE0FBFA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/png/osgdb_png.vcxproj">
+      <Project>88B1DE0A-E059-4534-BE6E-84D66AE17060</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/pnm/osgdb_pnm.vcxproj">
+      <Project>7A594890-41A3-4672-A3B6-06E99BAF4933</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/pov/osgdb_pov.vcxproj">
+      <Project>39B86AC8-CD05-4A18-BA38-EB421D07B800</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/pvr/osgdb_pvr.vcxproj">
+      <Project>BF294E62-CBD3-432F-88FB-23532744C4DB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/revisions/osgdb_revisions.vcxproj">
+      <Project>3941E9A4-035D-40C2-93F7-3D4157259392</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/rgb/osgdb_rgb.vcxproj">
+      <Project>D37A7451-DA50-456C-8935-E85A3D521053</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/rot/osgdb_rot.vcxproj">
+      <Project>D034EF17-7EEF-43E3-94F0-AFDF36E222EE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/scale/osgdb_scale.vcxproj">
+      <Project>0D3B806E-2D3A-4D65-8C3B-724DB6BDA96B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osg/osgdb_serializers_osg.vcxproj">
+      <Project>87DBA936-40AF-45A0-8295-98315FD2DFCA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgAnimation/osgdb_serializers_osganimation.vcxproj">
+      <Project>9E17D6CF-E90D-4BA1-9661-9C9CD8E27C94</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgFX/osgdb_serializers_osgfx.vcxproj">
+      <Project>45612F46-0636-494C-AB48-7B0F02FBB35D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgGA/osgdb_serializers_osgga.vcxproj">
+      <Project>9C01F239-EB94-46F4-A41F-4836A3A61212</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgManipulator/osgdb_serializers_osgmanipulator.vcxproj">
+      <Project>DDC0BCDB-E407-4551-B107-AF00A142E772</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgParticle/osgdb_serializers_osgparticle.vcxproj">
+      <Project>A2B6493B-5505-4292-8D48-21CD7707FFE1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgShadow/osgdb_serializers_osgshadow.vcxproj">
+      <Project>FE2EC5A4-663A-4340-B7E6-F2E7D5B945CB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgSim/osgdb_serializers_osgsim.vcxproj">
+      <Project>999D6482-925D-446E-96F2-F6C68530D35E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgTerrain/osgdb_serializers_osgterrain.vcxproj">
+      <Project>CCDBB2C5-BC70-44CC-A9A8-6C1224D5140A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgText/osgdb_serializers_osgtext.vcxproj">
+      <Project>C6A73668-2F7A-4184-9DC0-43A1A6F0EEEF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgUI/osgdb_serializers_osgui.vcxproj">
+      <Project>D1027F2B-E0A6-45A4-A879-D696A227578B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgUtil/osgdb_serializers_osgutil.vcxproj">
+      <Project>3742E1C8-D05F-4F09-89D3-CB2280889611</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgViewer/osgdb_serializers_osgviewer.vcxproj">
+      <Project>DA54B581-B1C2-4315-B27D-8A568C42B4E2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgWrappers/serializers/osgVolume/osgdb_serializers_osgvolume.vcxproj">
+      <Project>4CF0B4E3-91C8-4A2A-81E6-4AE7C34DEC59</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/shp/osgdb_shp.vcxproj">
+      <Project>4535DF53-0060-4717-BC4D-1D93F3D9DCEB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/stl/osgdb_stl.vcxproj">
+      <Project>8F72AA77-D257-4A8F-818E-D729C58BF438</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/tf/osgdb_tf.vcxproj">
+      <Project>214D2645-187E-4B26-9767-0D2CEF905A11</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/tga/osgdb_tga.vcxproj">
+      <Project>C464CCA6-E991-4B48-A14A-6281E51BA0F0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/tgz/osgdb_tgz.vcxproj">
+      <Project>45E15787-86D4-4168-A18C-7DEFA6A078E7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/tiff/osgdb_tiff.vcxproj">
+      <Project>924FC620-E7C1-41D3-9A2E-4C79A0210EEC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/trans/osgdb_trans.vcxproj">
+      <Project>B1BD553B-215F-4980-88E6-E66ECA4486F5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/trk/osgdb_trk.vcxproj">
+      <Project>858A20B5-DD23-4CB3-9154-0D295A7A7ABE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/txf/osgdb_txf.vcxproj">
+      <Project>74EB0C1E-BD0E-450E-9F40-A0E9AD920554</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/txp/osgdb_txp.vcxproj">
+      <Project>961DB623-E8B8-4ACD-92DD-7F8D267F8AAB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/vtf/osgdb_vtf.vcxproj">
+      <Project>109D8040-AD4D-48C3-93F4-0B5EB828C0C1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/x/osgdb_x.vcxproj">
+      <Project>6BB90FF3-18A3-4A5C-8600-2CC0DD46CED8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Packages/OpenSceneGraph-3.4/build/src/osgPlugins/zip/osgdb_zip.vcxproj">
+      <Project>9EA445E6-02D3-4A94-A42F-1780549E7AD0</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

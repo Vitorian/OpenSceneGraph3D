@@ -1,29 +1,28 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+doc/all_Doxyfile
+doc/auto_Doxyfile
+doc/core_Doxyfile
+doc/openscenegraph.doxyfile
+doc/openthreads.doxyfile
 
-# Precompiled Headers
-*.gch
-*.pch
+doc/OpenSceneGraphReferenceDocs/
+doc/OpenThreadsReferenceDocs/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+cmake_uninstall.cmake
 
-# Fortran module files
-*.mod
-*.smod
+include/OpenThreads/Config
+include/OpenThreads/Version
+include/osg/Config
+include/osg/GL
+include/osg/Version
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+lib/
+bin/
 
-# Executables
-*.exe
-*.out
-*.app
+*.pc
+*.conf
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+cmake_install.cmake
+install_manifest.txt
