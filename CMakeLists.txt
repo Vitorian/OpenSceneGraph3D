@@ -1,6 +1,14 @@
 set(CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS TRUE)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
+set(DESIRED_QT_VERSION "5" CACHE STRING "")
+set(CMAKE_PREFIX_PATH "D:/Qt/Qt5.6.0/5.6/msvc2015_64" CACHE PATH "")
+set(CMAKE_INSTALL_PREFIX "D:/Packages/3rdParty/install" CACHE PATH "" )
+set(ACTUAL_3RDPARTY_DIR "D:/Packages/3rdParty/v140-x64" CACHE PATH "" )
+add_definitions( "/MP /Ot /Oi /arch:AVX2 /fp:fast /Zp8 /GS- /Gy /Ox" )
+#list( APPEND CMAKE_EXE_LINKER_FLAGS "/LTCG" )
+#list( APPEND CMAKE_SHARED_LINKER_FLAGS "/LTCG" )
+
 IF(WIN32)
     CMAKE_MINIMUM_REQUIRED(VERSION 2.4.6 FATAL_ERROR)
 ELSE(WIN32)
@@ -628,7 +636,7 @@ ENDIF()
 OPTION(BUILD_OSG_APPLICATIONS "Enable to build OSG Applications (e.g. osgviewer)" ON)
 
 # OSG Examples
-OPTION(BUILD_OSG_EXAMPLES "Enable to build OSG Examples" OFF)
+OPTION(BUILD_OSG_EXAMPLES "Enable to build OSG Examples" ON)
 
 ################################################################################
 # 3rd Party Dependency Stuff
